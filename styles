@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container--info, .container--survey, .container--result {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 32px;
+}
+
+.container--info h1, .container--survey h1, .container--result h1{
+    font-size: 36px;
+    background-color: #ff373d;
+    color: #fff;
+    padding: 12px 0;
+    text-align: center;
+}
+
+.container--info #infoForm{
+    margin: 4px 16px;
+}
+
+.infoForm-item {
+    margin: 16px 0;
+}
+
+.infoForm-item label{
+    display: block;
+    margin-bottom: 8px;
+    font-size:18px;
+}
+
+.infoForm-item input{
+    font-size:18px;
+    width: 100%;
+    padding:8px 4px;
+}
+
+#infoForm footer, .container--survey footer {
+    display: flex;
+    align-items: center;justify-content: center;
+    padding: 16px 0;
+}
+
+#infoForm footer button, .container--survey footer button {
+    padding: 8px 16px;
+    font-size: 18px;
+}
+
+#infoForm footer button:hover, .container--survey footer button:hover {
+    cursor: pointer;
+}
+
+#question--list {
+    padding: 16px 16px;
+}
+
+.question {
+    padding: 4px;
+    margin-bottom:16px;
+}
+
+.question p{
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 16px;
+}
+
+.answer {
+    margin: 8px 4px;
+}
+
+.answer label {
+    font-size: 18px;
+}
+
+.answer input {
+    margin-right: 8px;
+}
+
+.question textarea {
+    width: 100%;
+    margin: 8px 8px;
+    font-size: 18px;
+    padding:8px 8px;
+    font-family: "Roboto", sans-serif;
+}
+
+.info-result-heading {
+    font-size:24px;
+    margin-bottom: 16px;
+    margin-left: 32px;
+}
+
+.info-result-name, .info-result-name, .info-result-date, .info-result-cccd, .info-result-address {
+    font-size:18px;
+    margin-bottom: 12px;
+    margin-left: 48px;
+}
+
+.answer-select {
+    font-size:18px;
+    margin-bottom:16px;
+    margin-left:32px;
+    padding: 8px;
+}
+
+.answer-select p{
+    margin-bottom: 8px;
+}
+.hidden {
+    display: none;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin và Khảo sát</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="https://portal.ptit.edu.vn/giaovu/wp-content/uploads/2016/05/favicon.png">
+</head>
+<body>
+    <div class="container--info" id = "info--box">
+        <h1>Thông tin cá nhân</h1>
+        <form id="infoForm">
+            <div class="infoForm-item">
+                <label for="fullName">Họ và tên:</label><br>
+                <input type="text" id="fullName" name="fullName" required><br>
+
+            </div>
+            <div class="infoForm-item">
+                <label for="dob">Ngày tháng năm sinh:</label><br>
+                <input type="date" id="dob" name="dob" required><br>
+
+            </div>
+            <div class="infoForm-item">
+                <label for="cccd">CCCD:</label><br>
+                <input type="text" id="cccd" name="cccd" required><br>
+
+            </div>
+            <div class="infoForm-item">
+                <label for="address">Địa chỉ thường trú:</label><br>
+                <textarea id="address" name="address" required></textarea><br><br>
+
+            </div>
+            <footer>
+                <button type="submit">Bắt đầu khảo sát</button>
+
+            </footer>
+        </form>
+    </div>
+
+    <div id="survey" class="container--survey hidden">
+        <h1>Khảo sát</h1>
+        <!-- Câu hỏi khảo sát sẽ được thêm vào đây sau khi người dùng nhập thông tin -->
+        <div id="question--list">
+
+        </div>
+        <footer>
+            <button id="submitSurvey">Nộp bài</button>
+
+        </footer>
+        
+    </div>
+
+    <div id="result" class="container--result hidden">
+        <h1>Kết quả</h1>
+        <!-- Kết quả bài làm sẽ được hiển thị ở đây sau khi người dùng nộp bài -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
